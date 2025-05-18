@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>বাংলাদেশ পরিক্রমা</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Serif Bengali', serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #d11a2a;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+    }
+    nav {
+      background: #222;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 18px;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+    nav a:hover {
+      background: #a10e1e;
+      border-radius: 4px;
+    }
+    .breaking-news {
+      background: #ffe600;
+      padding: 10px 20px;
+      font-weight: 700;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .breaking-news p {
+      display: inline-block;
+      animation: ticker 20s linear infinite;
+    }
+    @keyframes ticker {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      display: flex;
+      gap: 20px;
+      padding: 0 15px;
+    }
+    main {
+      flex: 3;
+    }
+    aside {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .news-section {
+      background: white;
+      padding: 15px;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .news-section h3 {
+      margin-top: 0;
+      border-bottom: 3px solid #d11a2a;
+      padding-bottom: 8px;
+      color: #d11a2a;
+    }
+    .news-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    .news-list li {
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+    .news-list li:hover {
+      color: #d11a2a;
+    }
+    .lead-news {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 25px;
+      flex-wrap: wrap;
+    }
+    .lead-main {
+      flex: 2;
+      background: white;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .lead-main img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .lead-main h2 {
+      margin: 15px;
+      font-size: 26px;
+      color: #d11a2a;
+    }
+    .lead-main p {
+      margin: 0 15px 15px 15px;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .lead-side {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .lead-side .small-news {
+      background: white;
+      border-radius: 6px;
+      padding: 12px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .lead-side .small-news:hover {
+      background: #ffe600;
+    }
+    .small-news h4 {
+      margin: 0;
+      font-size: 18px;
+      color: #222;
+    }
+    .ad-box {
+      background: #ddd;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: #555;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    aside .news-section iframe {
+      width: 100%;
+      height: 260px;
+      border: none;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 18px 20px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+      }
+      .lead-news {
+        flex-direction: column;
+      }
+      .lead-main, .lead-side {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  বাংলাদেশ পরিক্রমা
+</header>
+
+<nav>
+  <a href="#">প্রথম পাতা</a>
+  <a href="#">জাতীয়</a>
+  <a href="#">রাজনীতি</a>
+  <a href="#">আন্তর্জাতিক</a>
+  <a href="#">অর্থনীতি</a>
+  <a href="#">খেলা</a>
+  <a href="#">বিনোদন</a>
+  <a href="#">চাকরি</a>
+</nav>
+
+<div class="breaking-news">
+  <p>🔴 ব্রেকিং নিউজ: রাজধানীতে অগ্নিকাণ্ড, দমকল বাহিনী নিয়ন্ত্রণে কাজ করছে...</p>
+</div>
+
+<div class="container">
+
+  <main>
+
+    <section class="lead-news">
+      <article class="lead-main">
+        <img src="https://via.placeholder.com/800x400" alt="প্রধান খবর" />
+        <h2>ঢাকায় অনুষ্ঠিত মন্ত্রিসভা বৈঠকে গুরুত্বপূর্ণ সিদ্ধান্ত নেওয়া হয়েছে</h2>
+        <p>মন্ত্রিসভা বৈঠকে দেশের অর্থনীতি ও স্বাস্থ্যখাতে নতুন কিছু পদক্ষেপ নেওয়ার সিদ্ধান্ত হয়েছে...</p>
+      </article>
+      <aside class="lead-side">
+        <article class="small-news">
+          <h4>বিপিএলে আজ সন্ধ্যায় চট্টগ্রাম বনাম ঢাকা</h4>
+        </article>
+        <article class="small-news">
+          <h4>আন্তর্জাতিক সম্মেলনে বাংলাদেশের ভূমিকা প্রশংসিত</h4>
+        </article>
+      </aside>
+    </section>
+
+    <div class="ad-box">বিজ্ঞাপন ৮০০x১০০</div>
+
+    <section class="news-section">
+      <h3>জাতীয় সংবাদ</h3>
+      <ul class="news-list">
+        <li>সড়ক দুর্ঘটনায় নিহত ৪ জন</li>
+        <li>করোনা টিকাদান কর্মসূচি চলছে</li>
+        <li>গ্যাস সংকটে ভোগান্তি</li>
+        <li>প্রধানমন্ত্রীর সফরসূচি ঘোষণা</li>
+      </ul>
+    </section>
+
+    <section class="news-section">
+      <h3>রাজনীতি</h3>
+      <ul class="news-list">
+        <li>নতুন জোট গঠনের ঘোষণা</li>
+        <li>সংসদে বাজেট আলোচনা</li>
+      </ul>
+    </section>
+
+    <section class="news-section">
+      <h3>খেলার খবর</h3>
+      <ul class="news-list">
+        <li>বাংলাদেশ বনাম ভারত ম্যাচ লাইভ</li>
+        <li>মেসির গোলেই বার্সার জয়</li>
+      </ul>
+    </section>
+
+    <section class="news-section">
+      <h3>বিনোদন</h3>
+      <ul class="news-list">
+        <li>নতুন সিনেমার মুক্তি</li>
+      </ul>
+    </section>
+
+    <section class="news-section">
+      <h3>চাকরির খবর</h3>
+      <ul class="news-list">
+        <li>বিপুল সংখ্যক পদে নিয়োগ বিজ্ঞপ্তি</li>
+      </ul>
+    </section>
+
+    <section class="news-section">
+      <h3>আন্তর্জাতিক</h3>
+      <ul class="news-list">
+        <li>মধ্যপ্রাচ্যে উত্তেজনা</li>
+        <li>জাতিসংঘে বাংলাদেশের প্রস্তাব গৃহীত</li>
+      </ul>
+    </section>
+
+    <section class="news-section">
+      <h3>অর্থনীতি</h3>
+      <ul class="news-list">
+        <li>শেয়ারবাজারে ধস</li>
+        <li>রেমিটেন্সে উত্থান</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <aside>
+    <div class="ad-box">সাইড বিজ্ঞাপন 300x250</div>
+
+    <section class="news-section">
+      <h3>জনপ্রিয় সংবাদ</h3>
+      <ul class="news-list">
+        <li>চাকরির বিজ্ঞপ্তি প্রকাশ</li>
+        <li>আবহাওয়ার পূর্বাভাস</li>
+      </ul>
+    </section>
+
+    <section class="news-section">
+      <h3>ফেসবুক পেজ</h3>
+      <iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/dailybangladeshporikroma&tabs=timeline&width=300&height=260&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" scrolling="no" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section class="news-section">
+      <h3>YouTube চ্যানেল</h3>
+      <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=dailybangladeshporikroma" allowfullscreen></iframe>
+    </section>
+  </aside>
+
+</div>
+
+<footer>
+  &copy; ২০২৫ বাংলাদেশ পরিক্রমা | যোগাযোগ: info@example.com | সর্বস্বত্ব সংরক্ষিত
+</footer>
+
+</body>
+</html>
